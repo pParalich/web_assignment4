@@ -7,6 +7,7 @@ function checkInput(input) {
     input.classList.add('is-invalid');
   }
 }
+
 // Task 3
 var form3 = document.getElementById('form3');
 var inputs3 = form3.querySelectorAll('input, textarea');
@@ -26,13 +27,16 @@ form3.addEventListener('submit', function (e) {
     alert('Form sent!');
   }
 });
+
 // Task 4
 var form4 = document.getElementById('form4');
 var inputs4 = form4.querySelectorAll('input[type="text"], input[type="email"], input[type="password"], select');
 var password = document.getElementById('password');
 var confirmPassword = document.getElementById('confirmPassword');
+var country = document.getElementById('country');
 var genderError = document.getElementById('genderError');
 var success4 = document.getElementById('success4');
+var genderRadios = form4.querySelectorAll('input[name="gender"]');
 
 function checkPasswords() {
   if (password.value !== confirmPassword.value) {
@@ -60,6 +64,9 @@ for (var j = 0; j < inputs4.length; j++) {
       checkPasswords();
     } else {
       checkInput(this);
+      if (this === password && confirmPassword.value !== '') {
+        checkPasswords();
+      }
     }
   });
 }
@@ -67,6 +74,10 @@ for (var j = 0; j < inputs4.length; j++) {
 country.addEventListener('change', function () {
   checkInput(this);
 });
+
+for (var k = 0; k < genderRadios.length; k++) {
+  genderRadios[k].addEventListener('change', checkGender);
+}
 
 form4.addEventListener('submit', function (e) {
   e.preventDefault();
