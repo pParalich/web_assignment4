@@ -110,3 +110,84 @@
     </div>
 
     <hr>
+
+        <!-- Task 4 -->
+    <div id="task4">
+      <h2>Task 4. Registration Form</h2>
+
+      <form id="form4" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">First name is required</div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Last name is required</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email4" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Enter a valid email</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required minlength="6">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Password must be at least 6 characters</div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" required>
+            <div class="valid-feedback">Passwords match</div>
+            <div class="invalid-feedback">Passwords do not match</div>
+          </div>
+        </div>
+                <div class="mb-3">
+          <label class="form-label">Gender</label><br>
+          <input type="radio" name="gender" id="male" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label>
+          <div id="genderError" class="text-danger d-none">Please select gender</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Hobbies</label><br>
+          <input type="checkbox" id="hobby1" value="reading">
+          <label for="hobby1">Reading</label>
+          <input type="checkbox" id="hobby2" value="sports">
+          <label for="hobby2">Sports</label>
+          <input type="checkbox" id="hobby3" value="music">
+          <label for="hobby3">Music</label>
+        </div>
+
+        <div class="mb-3">
+          <label for="country" class="form-label">Country</label>
+          <select class="form-select" id="country" required>
+            <option value="">Choose country</option>
+            <option value="kz">Kazakhstan</option>
+            <option value="ru">Russia</option>
+            <option value="us">USA</option>
+          </select>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please select a country</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+
+        <div id="success4" class="alert alert-success mt-3 d-none">Registration successful!</div>
+      </form>
+    </div>
