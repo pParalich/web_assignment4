@@ -1,0 +1,31 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+.simple-form input,
+.simple-form textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#task1 input:valid,
+#task1 textarea:valid {
+  border: 2px solid green;
+}
+
+#task1 input:invalid,
+#task1 textarea:invalid {
+  border: 2px solid red;
+}
