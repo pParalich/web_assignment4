@@ -1,9 +1,9 @@
 # Forms Lab
 
-**Student:** Tleubay Abilmansur
-**Group:** SE2540
-Link:
-Lab work on HTML forms, HTML5 validation and Bootstrap 5.3.
+- **Student:** Tleubay Abilmansur
+- **Group:** SE2540
+- Link: https://pparalich.github.io/web_assignment4/
+- Lab work on HTML forms, HTML5 validation and Bootstrap 5.3.
 
 ## Tasks
 
