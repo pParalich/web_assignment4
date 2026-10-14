@@ -2,7 +2,7 @@
 
 **Student:** Tleubay Abilmansur
 **Group:** SE2540
-
+Link:
 Lab work on HTML forms, HTML5 validation and Bootstrap 5.3.
 
 ## Tasks
@@ -15,7 +15,16 @@ Lab work on HTML forms, HTML5 validation and Bootstrap 5.3.
 
 ## Screenshots
 
-
+### Task 0
+![Task 0 Screenshot](./images/image.png)
+### Task 1
+![Task 1 Screenshot](./images/image1.png)
+### Task 2
+![Task 2 Screenshot](./images/image3.png)
+### Task 3
+![Task 3 Screenshot](./images/image4.png)
+### Task 4
+![Task 4 Screenshot](./images/image5.png)
 
 ## Files
 
